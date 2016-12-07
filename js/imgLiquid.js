@@ -152,9 +152,9 @@ imgLiquid.injectCss = '.imgLiquid img {visibility:hidden}';
 					
 					// Check change img src
 					 if ($imgBoxCont.css('background-image').indexOf(imgUrl) === -1) {
- +            					// Change
- +            					$imgBoxCont.css({'background-image': 'url(' + imgUrl + ')'});
- +          				}
+             					// Change
+             					$imgBoxCont.css({'background-image': 'url(' + imgUrl + ')'});
+           				}
 
 					$imgBoxCont.css({
 						'background-size':		(settings.fill) ? 'cover' : 'contain',
