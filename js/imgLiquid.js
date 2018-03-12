@@ -111,7 +111,7 @@ imgLiquid.injectCss = '.imgLiquid img {visibility:hidden}';
 				// MAIN >> each for image
 
 				var settings = imgLiquidRoot.settings,
-				$imgBoxCont = $(this),
+				$imgBoxCont = $(this).addClass('imgLiquid'),
 				$img = $('img:first',$imgBoxCont);
 				if (!$img.length) {onError(); return;}
 
@@ -149,7 +149,7 @@ imgLiquid.injectCss = '.imgLiquid img {visibility:hidden}';
 
 				function processBgSize() {
 					var imgUrl = $img.attr('src').match('%') ? $img.attr('src') : encodeURI($img.attr('src'));
-					
+
 					// Check change img src
 					 if ($imgBoxCont.css('background-image').indexOf(imgUrl) === -1) {
              					// Change
